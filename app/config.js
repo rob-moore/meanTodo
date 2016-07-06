@@ -9,11 +9,11 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
   $stateProvider
     .state('todos', {
       url: '/',
-      template: require('todos/index.html')
+      template: require('components/todos/index.html')
     })
     .state('about', {
       url: '/about',
-      template: require('about/index.html')
+      template: require('components/about/index.html')
     })
 
   $locationProvider.html5Mode(true);

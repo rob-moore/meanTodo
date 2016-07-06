@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=$NODE_PATH:./src node server",
+    "start": "NODE_PATH=$NODE_PATH:./app node server",
     "dev": "npm start & webpack-dev-server --progress --colors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.7",
+    "angular-material": "^1.1.0-rc.5",
     "angular-ui-router": "^0.3.1",
     "express": "^4.14.0"
   },
