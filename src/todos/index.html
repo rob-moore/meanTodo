@@ -30,11 +30,27 @@
 
       </td>
       <td>
-        <button class="btn btn-info" ng-click="onEditClick(todo)" ng-if="!todo.isEditing">Edit</button>
-        <button class="btn btn-danger" ng-if="!todo.isEditing">Delete</button>
+        <button class="btn btn-info"
+                ng-click="onEditClick(todo)"
+                ng-if="!todo.isEditing">
+                Edit
+        </button>
+        <button class="btn btn-danger"
+                ng-click="deleteTask(todo)"
+                ng-if="!todo.isEditing">
+                Delete
+        </button>
 
-        <button class="btn btn-primary" ng-click="updateTask(todo)" ng-if="todo.isEditing">Save</button>
-        <button class="btn btn-default" ng-click="onCancelClick(todo)" ng-if="todo.isEditing">Cancel</button>
+        <button class="btn btn-primary"
+                ng-click="updateTask(todo)"
+                ng-if="todo.isEditing">
+                Save
+        </button>
+        <button class="btn btn-default"
+                ng-click="onCancelClick(todo)"
+                ng-if="todo.isEditing">
+                Cancel
+        </button>
       </td>
     </tr>
   </table>
