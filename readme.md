@@ -4,6 +4,7 @@
 
 - [Angular 1.5 styleguide training app](#angular-15-styleguide-training-app)
 - [About this app](#about-this-app)
+- [Boilerplate](#boilerplate)
 - [Installation](#installation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -15,6 +16,9 @@ With this project I hope to gain a better understanding of Angular as well as bu
 
 ## About this app
 TBD
+
+## Boilerplate
+This repository can also be used as a boilerplate to start new projects on.
 
 ## Installation
 In order to run this app on your local machine you'll need to do the following:

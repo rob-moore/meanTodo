@@ -3,8 +3,8 @@
   <h2>ToDo App</h2>
   <img class="avatar" src="http://api.adorable.io/avatar/200/bob" alt="Adorable avatar" />
 
-  <form>
-    <input class="form-control todos__create-input" placeholder="What shall we do?" />
+  <form ng-submit="createTask()">
+    <input class="form-control todos__create-input" placeholder="What shall we do?" ng-model="createTaskInput"/>
     <button class="btn btn-success todos__create-button">Create Task</button>
   </form>
 
@@ -16,10 +16,25 @@
     </tr>
     <tr ng-repeat="todo in todos">
       <td><input type="checkbox" ng-checked="todo.isCompleted" ng-click="onCompletedClick(todo)"></td>
-      <td><span class="todos__task" ng-class="{'todos__task-completed': todo.isCompleted}">{{ todo.task }}</span></td>
       <td>
-        <button class="btn btn-info">Edit</button>
-        <button class="btn btn-danger">Delete</button>
+        <span class="todos__task"
+              ng-if="!todo.isEditing"
+              ng-class="{'todos__task-completed': todo.isCompleted}">
+              {{ todo.task }}
+        </span>
+        <form ng-submit="updateTask(todo)">
+          <input ng-if="todo.isEditing" class="form-control todos__update-input"
+                ng-value="todos.task"
+                ng-model="todo.updatedTask" />
+        </form>
+
+      </td>
+      <td>
+        <button class="btn btn-info" ng-click="onEditClick(todo)" ng-if="!todo.isEditing">Edit</button>
+        <button class="btn btn-danger" ng-if="!todo.isEditing">Delete</button>
+
+        <button class="btn btn-primary" ng-click="updateTask(todo)" ng-if="todo.isEditing">Save</button>
+        <button class="btn btn-default" ng-click="onCancelClick(todo)" ng-if="todo.isEditing">Cancel</button>
       </td>
     </tr>
   </table>
