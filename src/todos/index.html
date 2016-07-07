@@ -24,7 +24,7 @@
         </span>
         <form ng-submit="updateTask(todo)">
           <input ng-if="todo.isEditing" class="form-control todos__update-input"
-                ng-value="todos.task"
+                ng-value="todo.task"
                 ng-model="todo.updatedTask" />
         </form>
 
