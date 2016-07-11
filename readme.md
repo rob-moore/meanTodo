@@ -18,7 +18,7 @@ With this project I hope to gain a better understanding of Angular as well as bu
 TBD
 
 ## Boilerplate
-This repository can also be used as a boilerplate to start new projects on.
+This repository can also be used as a boilerplate to start new projects on. (May move to a separate repository). For now it can be accessed in the `boilerplate` branch.
 
 ## Installation
 In order to run this app on your local machine you'll need to do the following:
