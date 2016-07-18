@@ -3,7 +3,7 @@
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = {
+const config = {
   devtool: 'inline-source-map',
   entry: [
     'webpack-dev-server/client?http://127.0.0.1:8080',
@@ -67,3 +67,5 @@ module.exports = {
     },
   },
 };
+
+module.exports = config;
