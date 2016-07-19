@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 export default function ($scope) {
-  let params = {
+  const params = {
     createHasInput: false,
   };
   $scope.todos = [
