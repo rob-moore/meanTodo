@@ -6,12 +6,12 @@ export default function ($scope) {
   };
   $scope.todos = [
     {
-      task: 'do dishes',
+      task: 'Do things',
       isCompleted: false,
       isEditing: false,
     },
     {
-      task: 'learn angular',
+      task: 'Make things',
       isCompleted: true,
       isEditing: false,
     },
