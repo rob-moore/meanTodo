@@ -2,20 +2,15 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Angular 1.5 styleguide training app](#angular-15-styleguide-training-app)
 - [About this app](#about-this-app)
 - [Boilerplate](#boilerplate)
 - [Installation](#installation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Angular 1.5 styleguide training app
-This app is being made following Todd Motto's [angular styleguide](https://github.com/toddmotto/angular-styleguide)
-
-With this project I hope to gain a better understanding of Angular as well as building a fully functional application from the ground up.
 
 ## About this app
-TBD
+The main purpose of this app is to show how webpack can be used in order to build a modern web app. In this case we are using the MEAN stack.
 
 ## Boilerplate
 This repository can also be used as a boilerplate to start new projects on. (May move to a separate repository). For now it can be accessed in the `boilerplate` branch.
@@ -24,7 +19,7 @@ This repository can also be used as a boilerplate to start new projects on. (May
 In order to run this app on your local machine you'll need to do the following:
 
 1. Clone this repository.
-2. `cd` into the `angular training`.
+2. `cd` into the `meanTodo`.
 3. Run `npm install`.
 4. Run `npm run dev`
 5. Open your browser of choice to `http://localhost:8080`.
